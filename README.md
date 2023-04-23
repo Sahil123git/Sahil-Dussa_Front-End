@@ -1,6 +1,6 @@
-#Front-end Assignment
+###Front-end Assignment
 
-##Ques 1)=> Explain what the simple List component does.
+###Ques 1)=> Explain what the simple List component does.
 
 Answer 1: The List component in React is responsible for displaying a list of items using the SingleListItem component. When the List component is rendered, it generates a SingleListItem component for each item in an array, passing in the text and isSelected props to display the item's content and indicate whether it is selected or not.
 
@@ -8,7 +8,7 @@ The List component also manages the selectedIndex state variable to keep track o
 
 To apply some basic styling to the list, the List component renders a ListContainer component that wraps all of the SingleListItem components. Overall, this component serves as an example of how to display and interact with a list of items in React.
 
-##Ques 2)=> What problems / warnings are there with code?
+###Ques 2)=> What problems / warnings are there with code?
 
 Answer 2: 
 a. There is a syntax error in the useState hook.
@@ -58,7 +58,7 @@ items: [
     { text: "College: LPU" },
   ]
 
-Q3) Please fix, optimize, and/or modify the component as much as you think is necessary.
+###Q3) Please fix, optimize, and/or modify the component as much as you think is necessary.
 ```
 import React, { useState, useEffect, memo } from "react";
 import PropTypes from "prop-types";
