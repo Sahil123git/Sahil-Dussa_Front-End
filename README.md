@@ -11,17 +11,15 @@ To apply some basic styling to the list, the List component renders a ListContai
 ## Ques 2)=> What problems / warnings are there with code?
 
 Answer 2:
-a. There is a syntax error in the useState hook.
+### a. There is a syntax error in the useState hook.
 
-```
-const[selectedIndex,setSelectedIndex]=useState();
-```
+`const[selectedIndex,setSelectedIndex]=useState();`
 
-b. The onClickHandler can be called as an arrow function.
+### b. The onClickHandler can be called as an arrow function.
 
-onClick={()=>onClickHandler(index)}
+`onClick={()=>onClickHandler(index)}`
 
-c. The isSelected prop should be equal to the index.
+### c. The isSelected prop should be equal to the index.
 
     <SingleListItem
       key={index}
@@ -30,11 +28,11 @@ c. The isSelected prop should be equal to the index.
       isSelected={selectedIndex === index}
     />
 
-d. The array prop should be replaced with arrayOf, and the shapeOf prop should be replaced with the shape property.
+### d. The array prop should be replaced with arrayOf, and the shapeOf prop should be replaced with the shape property.
 
 WrappedListComponent.propTypes = { items: PropTypes.array(PropTypes.shapeOf({ text: PropTypes.string.isRequired, })), };
 
-e. The handleClick function should be corrected.
+### e. The handleClick function should be corrected.
 
 ```
 const handleClick = (index) => {
@@ -42,7 +40,7 @@ selectedIndex === index ? setSelectedIndex(null) : setSelectedIndex(index);
 };
 ```
 
-f. It is recommended to provide a unique key to props when using the map function on an array.
+### f. It is recommended to provide a unique key to props when using the map function on an array.
 
     <SingleListItem
       key={index}
@@ -51,7 +49,7 @@ f. It is recommended to provide a unique key to props when using the map functio
       isSelected={selectedIndex === index}
     />
 
-g. We should avoid using null as a default prop value; a valid value should be assigned.
+### g. We should avoid using null as a default prop value; a valid value should be assigned.
 
 items: [
 { text: "Name: Sahil Dussa" },
