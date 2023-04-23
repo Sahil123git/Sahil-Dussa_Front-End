@@ -53,8 +53,8 @@ g. We should avoid using null as a default prop value; a valid value should be a
 
 items: [
     { text: "Name: Sahil Dussa" },
-    { text: "Reg No. : 12005608" },
-    { text: "Email-id: sahildussa457@gmail.com" },
+    { text: "Reg No. : 12345678" },
+    { text: "Email-id: email@gmail.com" },
     { text: "College: LPU" },
   ]
 
