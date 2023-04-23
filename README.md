@@ -30,7 +30,7 @@ Answer 2:
 
 ### d. The array prop should be replaced with arrayOf, and the shapeOf prop should be replaced with the shape property.
 
-WrappedListComponent.propTypes = { items: PropTypes.array(PropTypes.shapeOf({ text: PropTypes.string.isRequired, })), };
+`WrappedListComponent.propTypes = { items: PropTypes.array(PropTypes.shapeOf({ text: PropTypes.string.isRequired, })), };`
 
 ### e. The handleClick function should be corrected.
 
@@ -51,12 +51,13 @@ selectedIndex === index ? setSelectedIndex(null) : setSelectedIndex(index);
 
 ### g. We should avoid using null as a default prop value; a valid value should be assigned.
 
-items: [
+```items: [
 { text: "Name: Sahil Dussa" },
 { text: "Reg No. : 12345678" },
 { text: "Email-id: email@gmail.com" },
 { text: "College: LPU" },
 ]
+```
 
 ## Q3) Please fix, optimize, and/or modify the component as much as you think is necessary.
 
